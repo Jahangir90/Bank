@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <h1 class="text-3xl font-semibold text-center pt-8">
+      Let`s get some <span class="text-red-700">Money</span>
+    </h1>
+
+    <section>
+      <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto mt-8">
+        <div class="bg-emerald-900 p-8 rounded">
+          <h3 class="text-yellow-400 text-3xl">Deposit</h3>
+          <h3 class="text-rose-600 text-5xl">
+            $<span id="deposite-total">00</span>
+          </h3>
+        </div>
+
+        <!-- 1 -->
+        <div class="bg-lime-600 p-8 rounded">
+          <h3 class="text-yellow-400 text-3xl">Withdraw</h3>
+          <h3 class="text-rose-600 text-5xl">$<span id="withdraw-total">00</span></h3>
+        </div>
+
+        <!-- 2 -->
+        <div class="bg-emerald-400 p-8 rounded">
+          <h3 class="text-yellow-400 text-3xl">Balance</h3>
+          <h3 class="text-rose-600 text-5xl">$<span id="balance-total">1235</span></h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- deposite section -->
+
+    <section>
+      <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto mt-8">
+        <div class="">
+          <div class="bg-sky-400 p-8 rounded-xl">
+            <h4 class="text-3xl mb-2">Plase Deposite</h4>
+            <input
+              class="block mb-4"
+              type="text"
+              id="deposite-filed"
+              placeholder="Amound your want"
+              id=""
+            />
+            <button
+              class="text-2xl text-yellow-400 bg-red-500 hover:bg-sky-500 mt-2 px-2 rounded-md"
+              id="btn-deposite"
+            >
+              Depostte
+            </button>
+          </div>
+        </div>
+        <!-- 1 -->
+        <div class="">
+          <div class="bg-yellow-400 p-8 rounded-xl">
+            <h4 class="text-3xl mb-2">Plase with draw</h4>
+            <input
+              class="block mb-4"
+              type="text"
+              id="Withdraw-filed"
+              placeholder="Amound your want"
+              id=""
+            />
+            <button
+              class="text-2xl text-yellow-400 bg-red-500 hover:bg-sky-500 mt-2 px-2 rounded-md"
+              id="btn-Withdraw"
+            >
+              Withdraw
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./bank.js"></script>
+    <script src="./deposite.js"></script>
+    <script src="./withdraw.js"></script>
+  </body>
+</html>
